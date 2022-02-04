@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, dodgerblue, rgba(0, 0, 0, 0.959) );
+            font-family: Arial;
+        }
+        .formulario{
+            background-color: rgba(0, 0, 0, 0.479);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            width: 20%;
+            min-width: 350px;
+            border-radius: 10px;
+        }
+        legend{
+            background-color:white;
+            padding: 5px;
+            border-radius: 5px;
+            
+        }
+        input{
+            border-radius:5px;
+            background-color: rgba(0, 0, 0, 0.671);
+            border: 2px solid dodgerblue;
+            color: white;
+        }
+        select{
+            border-radius:5px;
+            background-color: rgb(0, 0, 0, 0.671);
+            border: none;  
+            color: white;
+            padding: 4px;
+        }
+        fieldset{
+           border:2px solid white;
+           border-radius: 5px;
+           
+        }
+        legend{
+            color: #53424e;
+        }
+        #arquivo{
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="formulario">
+        <form action="#" method="post" name="Formulario">
+            <fieldset>
+                <legend><b>Formulario de Inscrição</b></legend>
+                <br>
+                <div class="nome">
+                    <label for="nome">Nome Completo</label>
+
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <br>
+                <div class="email">
+                    <label for="email">Email</label>
+
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="idade">Qual a sua idade?</label>
+                   <input type="date" name="idade" id="idade">
+                </div>
+                <br>
+                <div>
+                    <select name="escolaridade" id="escolaridade">
+                        <option disabled selected value>Selecione a opição abaixo</option>
+                        <option value="fundamental">Fundamental Completo</option>
+                        <option value="ensino medio">Ensino Médio Completo</option>
+                        <option value="superior">Curso Superior (Cursando)</option>
+                        <option value="superiorcompleto">Curso Superior (Completo)</option>
+                        <option value="naofalar">Prefiro não Informar</option>
+                    </select>
+                    <label for="estudo">Qual seu grau de Escolaridade</label>
+                </div>
+                <br>
+                <div>
+                    <p>Quais as chances de você recomendar esse formulario para um conhecido?</p>
+                    <input type="radio" name="recomendacao" id="recomendacao"> Alta <br>
+                    <input type="radio" name="recomendacao" id="recomendacao"> Média <br>
+                    <input type="radio" name="recomendacao" id="recomendacao"> Baixa <br>
+                </div>
+                <br>
+                <div>
+                    <p>Qual o motivo de você estar aqui?</p>
+                    <input type="checkbox" name="motivos" id="motivos">Indicação
+                    <br>
+                    <input type="checkbox" name="motivos" id="motivos">Instagram
+                    <br>
+                    <input type="checkbox" name="motivos" id="motivos">Facebook
+                    <br>
+                    <input type="checkbox" name="motivos" id="motivos">WhatsApp
+                    <br>
+                </div>
+                <br>
+                <label for="arquivo">Selecione um arquivo</label>
+                <input type="file" name="arquivo" id="arquivo">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+</html>
